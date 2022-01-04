@@ -4,7 +4,7 @@
 
 [SOSD](https://learned.systems/papers/sosd.pdf) is a benchmark to compare (learned) index structures on equality lookup performance over densely packed, sorted data.
 The original version of SOSD can be downloaded at https://github.com/learnedsystems/SOSD.
-This modified version is designed to replicate the results presented in our paper at (ArXiv Link) concerning the comparison of Branchy and Banchfree algorithms using the best Learned Indexes in the Literature.
+This modified version is designed to replicate the results presented in our paper at (ArXiv Link) concerning the comparison between Branchy and Banchfree algorithms using the best Learned Indexes in the Literature.
 
 ## Dependencies
 
