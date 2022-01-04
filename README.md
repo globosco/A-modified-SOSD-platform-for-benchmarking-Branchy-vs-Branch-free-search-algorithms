@@ -1,4 +1,4 @@
-Modified Search on Sorted Data Benchmark for Branchy vs Branchfree study
+# Modified Search on Sorted Data Benchmark for Branchy vs Branchfree study
 
 ====
 
