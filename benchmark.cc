@@ -12,8 +12,6 @@
 #include "benchmarks/benchmark_rbs.h"
 #include "benchmarks/benchmark_rmi.h"
 #include "benchmarks/benchmark_rs.h"
-#include "benchmarks/benchmark_splaytree.h"
-#include "benchmarks/benchmark_standardbin.h"
 #include "benchmarks/benchmark_wormhole.h"
 #include "competitors/binary_search.h"
 #include "competitors/hash.h"
