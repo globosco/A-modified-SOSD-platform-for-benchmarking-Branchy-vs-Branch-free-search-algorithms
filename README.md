@@ -1,3 +1,6 @@
+
+
+
 # Modified Search on Sorted Data Benchmark for Branchy vs Branchfree study
 
 ====
@@ -8,7 +11,7 @@ This modified version is designed to replicate the results presented in our pape
 
 ## Dependencies
 
-Dependencies are the same of the original software. We repeat the here for completness.
+Dependencies are the same of the original software. We repeat them here for completness.
 
 On vanilla Ubuntu 20.04 LTS:
 
