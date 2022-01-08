@@ -3,7 +3,6 @@
 
 # Modified Search on Sorted Data Benchmark for Branchy vs Branchfree study
 
-====
 
 [SOSD](https://learned.systems/papers/sosd.pdf) is a benchmark to compare (learned) index structures on equality lookup performance over densely packed, sorted data.
 The original version of SOSD can be downloaded at [Github](https://github.com/learnedsystems/SOSD).
