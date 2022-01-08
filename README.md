@@ -40,7 +40,20 @@ We provide a number of scripts to automate things. Each is located in the `scrip
 
 ## Cite
 
-If you use this benchmark in your own work, please cite the original works:
+If you use this benchmark in your own work, please cite us:
+
+```
+@misc{amato2022standard,
+      title={Standard Vs Uniform Binary Search and Their Variants in Learned Static Indexing: The Case of the Searching on Sorted Data Benchmarking Software Platform}, 
+      author={Domenico Amato and Giosuè Lo Bosco and Raffaele Giancarlo},
+      year={2022},
+      eprint={2201.01554},
+      archivePrefix={arXiv},
+      primaryClass={cs.DS}
+}
+```
+
+and the original works:
 
 ```
 @article{sosd-vldb,
@@ -68,15 +81,4 @@ If you use this benchmark in your own work, please cite the original works:
 }
 ```
 
-and us:
 
-```
-@misc{amato2022standard,
-      title={Standard Vs Uniform Binary Search and Their Variants in Learned Static Indexing: The Case of the Searching on Sorted Data Benchmarking Software Platform}, 
-      author={Domenico Amato and Giosuè Lo Bosco and Raffaele Giancarlo},
-      year={2022},
-      eprint={2201.01554},
-      archivePrefix={arXiv},
-      primaryClass={cs.DS}
-}
-```
