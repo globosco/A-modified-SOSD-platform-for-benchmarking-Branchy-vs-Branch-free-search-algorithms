@@ -1,10 +1,12 @@
 #include "config.h"
 #include "searches/branching_binary_search.h"
 #include "searches/branchless_binary_search.h"
+#include "searches/branchless_binary_search_no_prefetch.h"
 #include "searches/interpolation_search.h"
 #include "searches/linear_search.h"
 #include "searches/bfs.h"
 #include "searches/eytzinger_layout_search.h"
+#include "searches/eytzinger_layout_search_no_prefetch.h"
 #include "searches/kbbs.h"
 #include "searches/kbfs.h"
 
@@ -20,12 +22,16 @@
       sosd::Benchmark<type_name, BranchingBinarySearch>&, bool);  \
   template void func_name<BranchlessBinarySearch>(                \
       sosd::Benchmark<type_name, BranchlessBinarySearch>&, bool); \
+  template void func_name<BranchlessBinarySearchNoPrefetch>(                \
+      sosd::Benchmark<type_name, BranchlessBinarySearchNoPrefetch>&, bool); \
   template void func_name<InterpolationSearch>(                   \
       sosd::Benchmark<type_name, InterpolationSearch>&, bool);      \
   template void func_name<BFS_Search>(                              \
       sosd::Benchmark<type_name, BFS_Search>&, bool);                \
   template void func_name<EytzingerLayoutSearch>(                              \
       sosd::Benchmark<type_name, EytzingerLayoutSearch>&, bool);\
+  template void func_name<EytzingerLayoutSearchNoPrefetch>(                              \
+      sosd::Benchmark<type_name, EytzingerLayoutSearchNoPrefetch>&, bool);\
   template void func_name<KBBS_Search>(                              \
       sosd::Benchmark<type_name, KBBS_Search>&, bool);          \
   template void func_name<KBFS_Search>(                              \
@@ -47,6 +53,9 @@
   template void func_name<BranchlessBinarySearch>(                          \
       sosd::Benchmark<type_name, BranchlessBinarySearch>&, bool,            \
       const std::string&);                                                  \
+  template void func_name<BranchlessBinarySearchNoPrefetch>(                          \
+      sosd::Benchmark<type_name, BranchlessBinarySearchNoPrefetch>&, bool,            \
+      const std::string&);                                                  \
   template void func_name<InterpolationSearch>(                             \
       sosd::Benchmark<type_name, InterpolationSearch>&, bool,               \
       const std::string&);                                                   \
@@ -55,6 +64,9 @@
       const std::string&);                                                  \
   template void func_name<EytzingerLayoutSearch>(                                      \
       sosd::Benchmark<type_name, EytzingerLayoutSearch>&, bool,                        \
+      const std::string&);                                                             \
+  template void func_name<EytzingerLayoutSearchNoPrefetch>(                                      \
+      sosd::Benchmark<type_name, EytzingerLayoutSearchNoPrefetch>&, bool,                        \
       const std::string&);                                                             \
   template void func_name<KBBS_Search>(                                      \
       sosd::Benchmark<type_name, KBBS_Search>&, bool,                        \

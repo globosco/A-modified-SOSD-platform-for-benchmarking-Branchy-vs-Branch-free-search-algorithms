@@ -19,9 +19,11 @@
 #include "config.h"
 #include "searches/branching_binary_search.h"
 #include "searches/branchless_binary_search.h"
+#include "searches/branchless_binary_search_no_prefetch.h"
 #include "searches/interpolation_search.h"
 #include "searches/linear_search.h"
 #include "searches/eytzinger_layout_search.h"
+#include "searches/eytzinger_layout_search_no_prefetch.h"
 #include "searches/kbbs.h"
 #include "searches/kbfs.h"
 #include "searches/bfs.h"
@@ -207,6 +209,8 @@ int main(int argc, char* argv[]) {
                         BFS_Search);
         add_search_type("eytzinger_layout", execute_32_bit, uint32_t,
                         EytzingerLayoutSearch);
+        add_search_type("eytzinger_layout_no_prefetch", execute_32_bit, uint32_t,
+                        EytzingerLayoutSearchNoPrefetch);
         add_search_type("kbbs", execute_32_bit, uint32_t,
                         KBBS_Search);
         add_search_type("kbfs", execute_32_bit, uint32_t,
@@ -225,6 +229,8 @@ int main(int argc, char* argv[]) {
                         BranchingBinarySearch);
         add_search_type("branchless_binary", execute_64_bit, uint64_t,
                         BranchlessBinarySearch);
+        add_search_type("branchless_binary_no_prefetch", execute_64_bit, uint64_t,
+                        BranchlessBinarySearchNoPrefetch);
         add_search_type("linear", execute_64_bit, uint64_t, LinearSearch);
         add_search_type("interpolation", execute_64_bit, uint64_t,
                         InterpolationSearch);
@@ -232,6 +238,8 @@ int main(int argc, char* argv[]) {
                         BFS_Search);
         add_search_type("eytzinger_layout", execute_64_bit, uint64_t,
                         EytzingerLayoutSearch);
+        add_search_type("eytzinger_layout_no_prefetch", execute_64_bit, uint64_t,
+                        EytzingerLayoutSearchNoPrefetch);
         add_search_type("kbbs", execute_64_bit, uint64_t,
                         KBBS_Search);
         add_search_type("kbfs", execute_64_bit, uint64_t,
