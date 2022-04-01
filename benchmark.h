@@ -180,7 +180,7 @@ class Benchmark {
   bool uses_lienar_search() const { return searcher_.name() == "LinearSearch"; }
 
   bool uses_layout_search() const {
-    return (searcher_.name() == "EytzingerLayoutSearch");
+    return (searcher_.name() == "EytzingerLayoutSearch" || searcher_.name() == "EytzingerLayoutSearchNoPrefetch");
   }
 
  private:

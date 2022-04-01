@@ -22,7 +22,7 @@ function do_benchmark() {
         echo "Already have results for $1"
     else
         echo "Executing workload $1"
-        $BENCHMARK -r $2 ./data/$1 ./data/$1_equality_lookups_2M --pareto --search eytzinger_layout_no_prefetch | tee ./results/$1_results.txt
+        $BENCHMARK -r $2 ./data/$1 ./data/$1_equality_lookups_2M --pareto --search eytzinger_layout_no_prefetch | tee $RESULTS
     fi
 }
 
