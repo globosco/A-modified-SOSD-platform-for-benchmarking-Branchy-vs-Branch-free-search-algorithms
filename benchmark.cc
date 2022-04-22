@@ -20,6 +20,8 @@
 #include "searches/branching_binary_search.h"
 #include "searches/branchless_binary_search.h"
 #include "searches/branchless_binary_search_no_prefetch.h"
+#include "searches/standard_binary_search_no_prefetch.h"
+#include "searches/standard_binary_search.h"
 #include "searches/interpolation_search.h"
 #include "searches/linear_search.h"
 #include "searches/eytzinger_layout_search.h"
@@ -54,11 +56,11 @@ void execute_32_bit(Benchmark benchmark, bool pareto, bool only_mode,
   // Build and probe individual indexes.
   if(!benchmark.uses_layout_search()){
     // std::cout << "Executing RMI" << std::endl;
-    check_only("RMI", benchmark_32_rmi(benchmark, pareto, filename));
-    // std::cout << "Executing RS" << std::endl;
-    check_only("RS", benchmark_32_rs(benchmark, pareto));
-    // std::cout << "Executing PGM" << std::endl;
-    check_only("PGM", benchmark_32_pgm(benchmark, pareto));
+    // check_only("RMI", benchmark_32_rmi(benchmark, pareto, filename));
+    // // std::cout << "Executing RS" << std::endl;
+    // check_only("RS", benchmark_32_rs(benchmark, pareto));
+    // // std::cout << "Executing PGM" << std::endl;
+    // check_only("PGM", benchmark_32_pgm(benchmark, pareto));
     // std::cout << "Executing B-Tree" << std::endl;
     // check_only("BTree", benchmark_32_btree(benchmark, pareto));
 
@@ -89,9 +91,9 @@ void execute_64_bit(Benchmark benchmark, bool pareto, bool only_mode,
                     std::string only, std::string filename) {
   // Build and probe individual indexes.
   if(!benchmark.uses_layout_search()){
-    check_only("RMI", benchmark_64_rmi(benchmark, pareto, filename));
-    check_only("RS", benchmark_64_rs(benchmark, pareto));
-    check_only("PGM", benchmark_64_pgm(benchmark, pareto));
+    // check_only("RMI", benchmark_64_rmi(benchmark, pareto, filename));
+    // check_only("RS", benchmark_64_rs(benchmark, pareto));
+    // check_only("PGM", benchmark_64_pgm(benchmark, pareto));
     // check_only("BTree", benchmark_64_btree(benchmark, pareto));
     // check_only("SplayTree", benchmark_64_splay(benchmark, pareto));
   //   check_only("ART", benchmark_64_art(benchmark, pareto));
@@ -202,6 +204,8 @@ int main(int argc, char* argv[]) {
                         BranchingBinarySearch);
         add_search_type("branchless_binary", execute_32_bit, uint32_t,
                         BranchlessBinarySearch);
+        add_search_type("branchless_binary_no_prefetch", execute_32_bit, uint32_t,
+                                        BranchlessBinarySearchNoPrefetch);
         add_search_type("linear", execute_32_bit, uint32_t, LinearSearch);
         add_search_type("interpolation", execute_32_bit, uint32_t,
                         InterpolationSearch);
@@ -215,6 +219,8 @@ int main(int argc, char* argv[]) {
                         KBBS_Search);
         add_search_type("kbfs", execute_32_bit, uint32_t,
                         KBFS_Search);
+        add_search_type("standard_binary_search", execute_32_bit, uint32_t,
+                                        StandardBinarySearch);
       }
 
       break;
@@ -244,6 +250,10 @@ int main(int argc, char* argv[]) {
                         KBBS_Search);
         add_search_type("kbfs", execute_64_bit, uint64_t,
                         KBFS_Search);
+        add_search_type("standard_binary_search_no_prefetch", execute_64_bit, uint64_t,
+                                        StandardBinarySearchNoPrefetch);
+        add_search_type("standard_binary_search", execute_64_bit, uint64_t,
+                                        StandardBinarySearch);
       }
       break;
     }

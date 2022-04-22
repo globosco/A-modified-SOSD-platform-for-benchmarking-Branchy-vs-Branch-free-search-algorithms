@@ -17,7 +17,7 @@ fi
 
 function do_benchmark() {
 
-    RESULTS=./results/$1_BranchlessBinarySearch_results.txt
+    RESULTS=./results/$1_kbbs_results.txt
     if [ -f $RESULTS ]; then
         echo "Already have results for $1"
     else
@@ -28,7 +28,7 @@ function do_benchmark() {
 
 function do_benchmark_csv() {
 
-    RESULTS=./results/$1_BranchlessBinarySearch_results_table.csv
+    RESULTS=./results/$1_kbbs_results_table.csv
     if [ -f $RESULTS ]; then
 	# Previously existing file could be from incomplete run
         echo "Removing results CSV for $1"

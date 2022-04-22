@@ -20,6 +20,114 @@ function build_rmi_set() {
 
 cd RMI && cargo build --release && cd ..
 
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_4_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_4_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_4_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_5_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_5_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_5_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_6_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_6_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_6_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_7_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_7_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_7_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_8_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_8_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_8_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_9_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_9_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_9_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_10_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_10_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_10_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_11_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_11_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_11_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_12_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_12_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_12_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_13_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_13_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_13_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_14_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_14_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_14_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_15_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_15_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_15_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_16_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_16_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_16_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_17_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_17_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_17_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_18_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_18_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_18_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_19_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_4_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_4_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_4_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_19_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_19_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_20_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_20_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_20_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_21_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_21_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_21_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_22_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_22_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_22_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_23_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_23_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_23_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_24_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_24_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_24_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_25_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_25_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_25_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_26_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_26_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_26_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_27_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_27_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_27_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_28_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_28_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_28_uint64.log
+
+TIMEFORMAT=%2U
+utime="$( TIMEFORMAT='%U';time ( build_rmi_set uniform_29_uint64 ) 2>&1 1>/dev/null )"
+echo "uniform_29_uint64 RMI Build Time: "$utime"s" >> scripts/logs/uniform_29_uint64.log
+
 #build_rmi_set L1_books_200M_uint32
 TIMEFORMAT=%2U
 utime="$( TIMEFORMAT='%U';time ( build_rmi_set L1_books_200M_uint32 ) 2>&1 1>/dev/null )"

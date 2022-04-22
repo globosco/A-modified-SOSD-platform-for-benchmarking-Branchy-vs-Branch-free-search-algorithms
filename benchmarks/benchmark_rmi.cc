@@ -183,10 +183,10 @@ void benchmark_32_rmi(sosd::Benchmark<uint32_t, Searcher>& benchmark,
   // run_rmi_binary_pareto_1(uint32, L4_books_200M)
 
   //BEST MODELS
-  run_rmi_binary_pareto_3(uint32, L1_books_200M)
-  run_rmi_binary_pareto_9(uint32, L2_books_200M)
-  run_rmi_binary_pareto_10(uint32, L3_books_200M)
-  run_rmi_binary_pareto_10(uint32, L4_books_200M)
+  // run_rmi_binary_pareto_3(uint32, L1_books_200M)
+  // run_rmi_binary_pareto_9(uint32, L2_books_200M)
+  // run_rmi_binary_pareto_10(uint32, L3_books_200M)
+  // run_rmi_binary_pareto_10(uint32, L4_books_200M)
 
   // run_rmi_binary_pareto_30(uint32, L1_books_200M);
   // run_rmi_binary_pareto_30(uint32, L2_books_200M);
@@ -223,27 +223,55 @@ void benchmark_64_rmi(sosd::Benchmark<uint64_t, Searcher>& benchmark,
   // run_rmi_binary_pareto_1(uint64, L3_wiki_ts_200M);
   // run_rmi_binary_pareto_1(uint64, L4_wiki_ts_200M);
 
+  //UNIFORM MORIN
+  // run_rmi_binary_pareto_6(uint64, uniform_4);
+  // // run_rmi_binary_pareto_6(uint64, uniform_5);
+  // run_rmi_binary_pareto_6(uint64, uniform_6);
+  // // run_rmi_binary_pareto_8(uint64, uniform_7);
+  // run_rmi_binary_pareto_10(uint64, uniform_8);
+  // // run_rmi_binary_pareto_10(uint64, uniform_9);
+  // run_rmi_binary_pareto_10(uint64, uniform_10);
+  // // run_rmi_binary_pareto_10(uint64, uniform_11);
+  // run_rmi_binary_pareto_10(uint64, uniform_12);
+  // // run_rmi_binary_pareto_10(uint64, uniform_13);
+  // run_rmi_binary_pareto_10(uint64, uniform_14);
+  // // run_rmi_binary_pareto_10(uint64, uniform_15);
+  // run_rmi_binary_pareto_10(uint64, uniform_16);
+  // // run_rmi_binary_pareto_10(uint64, uniform_17);
+  // run_rmi_binary_pareto_10(uint64, uniform_18);
+  // // run_rmi_binary_pareto_10(uint64, uniform_19);
+  // run_rmi_binary_pareto_10(uint64, uniform_20);
+  // // run_rmi_binary_pareto_10(uint64, uniform_21);
+  // run_rmi_binary_pareto_10(uint64, uniform_22);
+  // // run_rmi_binary_pareto_10(uint64, uniform_23);
+  // run_rmi_binary_pareto_10(uint64, uniform_24);
+  // // run_rmi_binary_pareto_10(uint64, uniform_25);
+  // run_rmi_binary_pareto_10(uint64, uniform_26);
+  // // run_rmi_binary_pareto_10(uint64, uniform_27);
+  // run_rmi_binary_pareto_10(uint64, uniform_28);
+  // // run_rmi_binary_pareto_10(uint64, uniform_29);
+
   //BEST MODEL
-  run_rmi_binary_pareto_6(uint64, L1_books_200M);
-  run_rmi_binary_pareto_10(uint64, L2_books_200M);
-  run_rmi_binary_pareto_10(uint64, L3_books_200M);
-  run_rmi_binary_pareto_10(uint64, L4_books_200M);
-
-  run_rmi_binary_pareto_8(uint64, L1_fb_200M);
-  run_rmi_binary_pareto_9(uint64, L2_fb_200M);
-  run_rmi_binary_pareto_10(uint64, L3_fb_200M);
-  run_rmi_binary_pareto_10(uint64, L4_fb_200M);
-  run_rmi_binary_pareto_10(uint64, L4_fb_200M_no_outlayers);
-
-  run_rmi_binary_pareto_10(uint64, L1_osm_cellids_200M);
-  run_rmi_binary_pareto_10(uint64, L2_osm_cellids_200M);
-  run_rmi_binary_pareto_10(uint64, L3_osm_cellids_200M);
-  run_rmi_binary_pareto_10(uint64, L4_osm_cellids_200M);
-
-  run_rmi_binary_pareto_8(uint64, L1_wiki_ts_200M);
-  run_rmi_binary_pareto_10(uint64, L2_wiki_ts_200M);
-  run_rmi_binary_pareto_10(uint64, L3_wiki_ts_200M);
-  run_rmi_binary_pareto_10(uint64, L4_wiki_ts_200M);
+  // run_rmi_binary_pareto_6(uint64, L1_books_200M);
+  // run_rmi_binary_pareto_10(uint64, L2_books_200M);
+  // run_rmi_binary_pareto_10(uint64, L3_books_200M);
+  // run_rmi_binary_pareto_10(uint64, L4_books_200M);
+  //
+  // run_rmi_binary_pareto_8(uint64, L1_fb_200M);
+  // run_rmi_binary_pareto_9(uint64, L2_fb_200M);
+  // run_rmi_binary_pareto_10(uint64, L3_fb_200M);
+  // run_rmi_binary_pareto_10(uint64, L4_fb_200M);
+  // run_rmi_binary_pareto_10(uint64, L4_fb_200M_no_outlayers);
+  //
+  // run_rmi_binary_pareto_10(uint64, L1_osm_cellids_200M);
+  // run_rmi_binary_pareto_10(uint64, L2_osm_cellids_200M);
+  // run_rmi_binary_pareto_10(uint64, L3_osm_cellids_200M);
+  // run_rmi_binary_pareto_10(uint64, L4_osm_cellids_200M);
+  //
+  // run_rmi_binary_pareto_8(uint64, L1_wiki_ts_200M);
+  // run_rmi_binary_pareto_10(uint64, L2_wiki_ts_200M);
+  // run_rmi_binary_pareto_10(uint64, L3_wiki_ts_200M);
+  // run_rmi_binary_pareto_10(uint64, L4_wiki_ts_200M);
 
   //SY-RMI
   // run_rmi_binary_pareto_30(uint64, L1_books_200M);

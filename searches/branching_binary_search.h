@@ -44,5 +44,5 @@ class BranchingBinarySearch : public Search<KeyType> {
   }
   void createLayout(const std::vector<Row<KeyType>>& A, std::vector<Row<KeyType>>& B, uint64_t i, uint64_t n){}
 
-  std::string name() const { return "BinarySearch"; }
+  std::string name() const { return "LowerBoundSearch"; }
 };
