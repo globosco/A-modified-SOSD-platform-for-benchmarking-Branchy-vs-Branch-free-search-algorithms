@@ -8,6 +8,16 @@
 The original version of SOSD can be downloaded at [Github](https://github.com/learnedsystems/SOSD).
 This modified version is designed to replicate the results presented in our paper at [ArXiv](https://arxiv.org/abs/2201.01554) concerning the comparison between Branchy and Banchfree algorithms using the best Learned Indexes in the Literature.
 
+## Principal modifications
+
+We added some search routines to the ones provided by the platform. In particular, we provide the following methods.
+
+1  Uniform Binary, 
+1 Uniform and Standard k-ary Search 
+1 Search layouts other than sorted, i.e. Eytzinger Layout
+
+We provide also the scripts to execute allo of them on datasets linked in the dedicated Section.
+
 ## Dependencies
 
 Dependencies are the same of the original software. We repeat them here for completness.
