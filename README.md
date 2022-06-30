@@ -12,11 +12,12 @@ This modified version is designed to replicate the results presented in our pape
 
 We added some search routines to the ones provided by the platform. In particular, we provide the following methods.
 
-1)  Uniform Binary, 
+1) Uniform Binary, 
 1) Uniform and Standard k-ary Search 
 1) Search layouts other than sorted, i.e. Eytzinger Layout
 
-We provide also the scripts to execute allo of them on datasets linked in the dedicated Section.
+We also limited the execution on only three Learned Indexes, i.e., RMI, PGM-Index and RS.
+Finally, we provide the scripts to execute all of them on datasets linked in the dedicated Section.
 
 ## Dependencies
 
